@@ -39,25 +39,51 @@
 }
 */
 
-.parent {
-  text-align: center;
+
+
+nav {
+  
 }
 
-.header {
-  background: darkgrey;
-  position: absolute;
-  width: 100%;
+header {
+  background: #282c34;
+  color: white;
+  height: 75px;
+}
+
+
+
+body {
+  position: relative;
+  background-color: lightgray;
+  margin: 0 auto;
+}
+
+.aboutList {
+  font-size: 20px;
 }
 
 .headerTab {
   padding: 0px;
-  margin: 0px 100px;
   display: inline-block;
+  margin: auto 20px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
 
-
+.headerTab p {
+  font-size: 20px;  
 }
 
 #poop {
-  margin-left: 0px;
-  margin-right: 500px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
+}
+
+.headerTab:hover {
+  border-bottom:10px #7a6970;
+  
 }

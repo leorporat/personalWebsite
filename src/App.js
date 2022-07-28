@@ -23,23 +23,41 @@ function App() {
 }
 */
 
-function App() {
+function Header() {
   return (
-    <div className="header">
-      
-      <div className="parent">
-        <div className="headerTab" id="poop">
-          <h1>Leor Porat</h1>
-        </div>
-        <div className="headerTab">
-          <h1>About</h1>
-        </div>
-        <div className="headerTab">
-          <h1>Research</h1>
-        </div>
-      </div>
-    </div>
+    <html>
+      <header>
+        
+        <nav>
+          <div className="headerTab" id="poop">
+            <h1><strong>Leor<br></br>Porat</strong></h1>
+          </div>
+          <div className="headerTab">
+            <p>About</p>
+          </div>
+          <div className="headerTab">
+            <p>Research</p>
+          </div>
+          <div className="headerTab">
+            <p>Education</p>
+          </div>
+          <div className="headerTab">
+            <p>Personal</p>
+          </div>
+          <div className="headerTab">
+            <p>Projects</p>
+          </div>
+        </nav>
+      </header>
+      <body>
+        <h1>Hey, I'm Leor. I'm: </h1>
+        <ul className="aboutList">
+          <li>An incoming freshman at the University of Minnesota</li>
+        </ul>
+        
+      </body>
+    </html>
   );
 }
 
-export default App;
+export default Header;
