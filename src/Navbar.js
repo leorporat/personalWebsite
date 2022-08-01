@@ -36,21 +36,25 @@ function Navbar() {
         */
         <div className='nav-parent'>
             <nav>
-                <a href="/" className="site-title"> Leor Porat</a>
+                <a href="/" className="site-title">Leor Porat</a>
                 <ul>
-                    <li className='active'>
-                        <a href="/education">Education</a>
-                    </li>
-                    <li>
-                        <a href="/projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="/personal">Personal</a>
-                    </li>
+                    <SetActiveRoute href="/education">Education</SetActiveRoute>
+                    <SetActiveRoute href="/projects">Projects</SetActiveRoute>
+                    <SetActiveRoute href="/personal">Personal</SetActiveRoute>
                 </ul>
             </nav>
         </div>
     )
+}
+
+function SetActiveRoute({ href, children, ...props }) {
+    const path = window.location.pathname;
+    return (
+        <li className={path === href ? "active" : ""}>
+            <a href={href} {...props}>{children}</a>
+        </li>
+    );
+    
 }
 
 export default Navbar;
