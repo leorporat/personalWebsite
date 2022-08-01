@@ -71,7 +71,3 @@ nav ul {
 nav li.active {
   color: #777;
 }
-
-nav li:hover {
-  background-color: #999;
-}
