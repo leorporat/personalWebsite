@@ -34,20 +34,22 @@ function Navbar() {
           </body>
         </html>
         */
-       <nav>
-        <a href="/" className="site-title">Leor Porat</a>
-        <ul>
-            <li>
-                <a href="/education">Education</a>
-            </li>
-            <li>
-                <a href="/projects">Projects</a>
-            </li>
-            <li>
-                <a href="/personal">Personal</a>
-            </li>
-        </ul>
-       </nav>
+        <div className='nav-parent'>
+            <nav>
+                <a href="/" className="site-title"> Leor Porat</a>
+                <ul>
+                    <li className='active'>
+                        <a href="/education">Education</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/personal">Personal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     )
 }
 
