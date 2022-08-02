@@ -4,28 +4,22 @@ import About from './pages/About';
 import Education from './pages/Education';
 import Personal from './pages/Personal';
 import Projects from './pages/Projects';
+import {Route, Routes} from "react-router-dom"
 
 function App() {
-  let Component;
-  switch (window.location.pathname) {
-    case "/":
-      Component = About;
-      break
-    case "/education":
-      Component = Education;
-       break
-    case "/personal":
-      Component = Personal;
-      break
-    case "/projects":
-      Component = Projects;
-      break
-
-  }
+  
+  
   return (
     <div>
       <Navbar />
-      <Component />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/personal" element={<Personal />} />
+        </Routes>
+      </div>
     </div>
     
   );

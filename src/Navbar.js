@@ -1,4 +1,5 @@
 import salute from './pictures/salute.png'
+import {Link, useMatch, useResolvedPath} from "react-router-dom"
 
 function Navbar() {
     return (
@@ -9,23 +10,24 @@ function Navbar() {
             </head>
             <nav>
                 <div>
-                    <a href="/" className="site-title">Leor Porat</a>
+                    <Link to="/" className="site-title">Leor Porat</Link>
                 </div>
                 <ul>
-                    <SetActiveRoute href="/education">Education</SetActiveRoute>
-                    <SetActiveRoute href="/projects">Projects</SetActiveRoute>
-                    <SetActiveRoute href="/personal">Personal</SetActiveRoute>
+                    <SetActiveRoute to="/education">Education</SetActiveRoute>
+                    <SetActiveRoute to="/projects">Projects</SetActiveRoute>
+                    <SetActiveRoute to="/personal">Personal</SetActiveRoute>
                 </ul>
             </nav>
         </div>
     )
 }
 
-function SetActiveRoute({ href, children, ...props }) {
-    const path = window.location.pathname;
+function SetActiveRoute({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({path: resolvedPath.pathname, end: true});
     return (
-        <li className={path === href ? "active" : ""}>
-            <a href={href} {...props}>{children}</a>
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>{children}</Link>
         </li>
     );
     
