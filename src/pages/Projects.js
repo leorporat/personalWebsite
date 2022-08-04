@@ -1,9 +1,9 @@
 function Projects() {
     return (
         <body>
-            <div className='projects-title'>
-                <div className='line-left'><p>Hey</p></div>
-                <h1>Projects</h1>
+            <div className='section-title'>
+                <div className='line-left'></div>
+                <p id='title-name'>Projects</p>
                 <div className='line-right'></div>
             </div>
             <div className='projects-parent'>

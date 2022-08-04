@@ -1,6 +1,10 @@
 function Education() {
     return (
-        <h1>Education</h1>
+        <div className='section-title'>
+                <div className='line-left'></div>
+                <p id='title-name'>Education</p>
+                <div className='line-right'></div>
+        </div>
     );
 }
 

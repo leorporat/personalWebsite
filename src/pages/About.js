@@ -7,6 +7,7 @@ function About() {
                     <h1 className='about-title'> 👋 Hey, I'm Leor</h1>
                     <div className='about-text'>
                         <p>I'm a 17 year old incoming college student interested in everything FinTech</p>
+                        <p>Connect with me below:</p>
                     </div>
                 </div>
             </div>
