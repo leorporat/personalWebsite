@@ -9,7 +9,7 @@ function Navbar() {
                 <link rel="shortcut icon" href={salute}/>
             </head>
             <nav>
-                <div>
+                <div className='name'>
                     <Link to="/" className="site-title">Leor Porat</Link>
                 </div>
                 <ul>

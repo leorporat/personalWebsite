@@ -1,3 +1,6 @@
+import Navline from '../components/Navline';
+import linkedin_png from '../pictures/linkedin_png.png'
+
 function About() {
     return (
         <body>
@@ -8,12 +11,7 @@ function About() {
                     <div className='about-text'>
                         <p>I'm a 17 year old incoming college student interested in everything FinTech</p>
                         <p>Connect with me below:</p>
-                        <ul className='contact-info'>
-                            <li>porato18@gmail.com</li>
-                            <li>
-                                
-                            </li>
-                        </ul>
+                        <Navline logo={linkedin_png} name='LinkedIn' site='https://www.linkedin.com/in/leor-porat-a46137214/'/>
                     </div>
                 </div>
             </div>

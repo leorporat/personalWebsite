@@ -77,7 +77,7 @@ nav li.active {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 50;
   font-size: 40px;
-  background: rgb(0 0 0 / 0.1) !important;
+  /*background: rgb(0 0 0 / 0.1) !important;*/
 }
 
 #title-name {
@@ -95,6 +95,9 @@ nav li.active {
   width: 80px;
   margin: 10px;
   outline: 1px solid black;
+}
+
+nav .name {
 }
 
 .projects-parent {
@@ -116,4 +119,10 @@ nav li.active {
   gap: 1rem;
   padding: 0 1rem;
   font-family: 'Raleway', sans-serif;
+}
+
+.navline-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
