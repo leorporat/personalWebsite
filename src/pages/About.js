@@ -8,6 +8,12 @@ function About() {
                     <div className='about-text'>
                         <p>I'm a 17 year old incoming college student interested in everything FinTech</p>
                         <p>Connect with me below:</p>
+                        <ul className='contact-info'>
+                            <li>porato18@gmail.com</li>
+                            <li>
+                                
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
