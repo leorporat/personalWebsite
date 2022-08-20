@@ -1,3 +1,5 @@
+import Project from "../components/Project";
+
 function Projects() {
     return (
         <body>
@@ -6,15 +8,10 @@ function Projects() {
                 <p id='title-name'>Projects</p>
                 <div className='line-right'></div>
             </div>
-            <div className='projects-parent'>
-                <div className='projects-body'>
-                    <div className='projects-personal-website'>
-                        <h3>This website <div className='projects-date'>(July 2022)</div></h3>
-                        <p>Built with HTML, CSS, React.js</p>
-                    </div>
-                </div>
-                    
-            </div>
+            <Project 
+                title='This website' 
+                date='(July 2022)'
+            />
         </body>
     );
 }
