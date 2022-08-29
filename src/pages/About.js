@@ -13,7 +13,7 @@ function About() {
                     <div className='about-text'>
                         <p>I'm a 17 year old incoming college student interested in everything FinTech</p>
                         <p id='about-connect'>Connect with me below:</p>
-                        <Navline id='navline-email' name='porato18@gmail.com' logo={mail_png}/>
+                        <Navline id='navline-email' name='Email' logo={mail_png}/>
                         <Navline logo={linkedin_png} name='LinkedIn' site='https://www.linkedin.com/in/leor-porat-a46137214/'/>
                         <Navline name='GitHub' logo={github_png} site='https://github.com/Skidido'/>
                     </div>

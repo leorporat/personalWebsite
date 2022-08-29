@@ -1,17 +1,20 @@
 import Project from "../components/Project";
+import Title from "../components/Title";
+
 
 function Projects() {
     return (
         <body>
-            <div className='section-title'>
-                <div className='line-left'></div>
-                <p id='title-name'>Projects</p>
-                <div className='line-right'></div>
-            </div>
-            <Project 
+            <Title
+                
+                title='Projects'
+            />
+            {/* <Project 
                 title='This website' 
                 date='(July 2022)'
-            />
+                description='Website about myself, a short summer project'
+                specs='HTML, CSS, React.js'
+            /> */}
         </body>
     );
 }

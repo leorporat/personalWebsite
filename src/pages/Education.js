@@ -1,10 +1,16 @@
+import Title from "../components/Title";
+import salute from '../pictures/salute.png'
+
 function Education() {
     return (
-        <div className='section-title'>
-                <div className='line-left'></div>
-                <p id='title-name'>Education</p>
-                <div className='line-right'></div>
-        </div>
+        <body>
+            <Title 
+                image={salute}
+                title='Education'
+            />
+            <p className='education-title'></p>
+        </body>
+
     );
 }
 
