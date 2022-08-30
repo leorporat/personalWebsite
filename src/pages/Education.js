@@ -1,11 +1,11 @@
 import Title from "../components/Title";
-import salute from '../pictures/salute.png'
+import greenbook from '../pictures/greenbook.png';
 
 function Education() {
     return (
         <body>
             <Title 
-                image={salute}
+                image={greenbook}
                 title='Education'
             />
             <p className='education-title'></p>

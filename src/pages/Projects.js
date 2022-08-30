@@ -1,5 +1,6 @@
 // import Project from "../components/Project";
 import Title from "../components/Title";
+import tools from '../pictures/tool_png.png';
 
 
 function Projects() {
@@ -7,6 +8,7 @@ function Projects() {
         <body>
             <Title
                 title='Projects'
+                image={tools}
             />
             {/* <Project 
                 title='This website' 
