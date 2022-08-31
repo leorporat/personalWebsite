@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './Navbar';
 import About from './pages/About';
 import Education from './pages/Education';
 import Personal from './pages/Personal';
@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
+          <Route path="/personalWebsite" element={<About />} />
           <Route path="/" element={<About />} />
           <Route path="/education" element={<Education />} />
           <Route path="/projects" element={<Projects />} />

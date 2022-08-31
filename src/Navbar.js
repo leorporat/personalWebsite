@@ -1,4 +1,4 @@
-import salute from '../pictures/salute.png'
+import salute from './pictures/salute.png'
 import {Link, useMatch, useResolvedPath} from "react-router-dom"
 
 function Navbar() {
