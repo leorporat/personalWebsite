@@ -15,7 +15,7 @@ function About() {
                         <p id='about-connect'>Connect with me below:</p>
                         <Navline id='navline-email' name='Email' logo={mail_png}/>
                         <Navline logo={linkedin_png} name='LinkedIn' site='https://www.linkedin.com/in/leor-porat-a46137214/'/>
-                        <Navline name='GitHub' logo={github_png} site='https://github.com/Skidido'/>
+                        <Navline name='GitHub' logo={github_png} site='https://github.com/leorporat'/>
                     </div>
                 </div>
             </div>
