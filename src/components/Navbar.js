@@ -1,4 +1,4 @@
-import salute from './pictures/salute.png'
+import salute from '../pictures/salute.png'
 import {Link, useMatch, useResolvedPath} from "react-router-dom"
 
 function Navbar() {
@@ -13,9 +13,9 @@ function Navbar() {
                     <Link to="/" className="site-title">Leor Porat</Link>
                 </div>
                 <ul>
-                    <SetActiveRoute to="/education">Education</SetActiveRoute>
-                    <SetActiveRoute to="/projects">Projects</SetActiveRoute>
-                    <SetActiveRoute to="/personal">Personal</SetActiveRoute>
+                    <SetActiveRoute to="/education" className='nav-tab'>Education</SetActiveRoute>
+                    <SetActiveRoute to="/projects" className='nav-tab'>Projects</SetActiveRoute>
+                    <SetActiveRoute to="/personal" className='nav-tab'>Personal</SetActiveRoute>
                 </ul>
             </nav>
         </div>

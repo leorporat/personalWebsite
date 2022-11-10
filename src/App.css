@@ -1,11 +1,16 @@
 * {
   box-sizing: border-box;
+  color: #0d0d0d;
+  font-family: 'Raleway', sans-serif;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
 }
 
 body {
-  background-color: white;
-  /* background-color: #f5efdd; */
-  margin: 0;
+  background-color: #fef9f8;
 }
 
 nav {
@@ -19,7 +24,7 @@ nav {
   padding: 0 1rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 nav a {
@@ -43,8 +48,28 @@ nav ul {
 .nav-parent {
   display: flex;
   justify-content: center;
-  background-color: rgb(242, 208, 208);
-  margin: 0px 15px;
+  /* background-color: #e1eedd; */
+
+}
+
+.nav-tab {
+  position: relative;
+}
+
+.nav-tab::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  bottom: 0;
+  left: 0;
+  background: black;
+  transform: scale(0,1);
+  transition: transform 0.3s ease;
+}
+
+.nav-tab:hover::after {
+  transform: scale(1, 1)
 }
 
 .site-title {
@@ -125,71 +150,162 @@ nav li.active {
 }
 
 .navline-text {
-  text-decoration-color: black;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 0.15rem;
-  color: black;
+  text-decoration-color: #fef9f8;
+  text-decoration-style: none;
+  text-decoration-thickness: 0;
+  text-decoration: none;
+  color: #fef9f8;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
+  font-weight: lighter;
+  position: relative;
 }
+
+.navline-text::after {
+    content: '';
+    position: absolute;
+    width: 55%;
+    height: 0.175rem;
+    bottom: 0;
+    background: white;
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+  }
+  
+  .navline-text:hover::after {
+    transform: scale(1, 1)
+  }
+
 
 .navline-parent {
   margin: 15px auto;
   
   padding: 10px;
-  border-radius: 10px;
-  background: rgb(241, 230, 190);
+  border-radius: 30px;
+  background: #f69e81;
+  /* background: rgba(231, 243, 139, 0.4) !important;  */
   max-width: 200px;
 }
 
-.navline-parent:hover {
-  background: rgb(233, 216, 154);
-}
+/* .navline-parent:hover {
+  background: #f5cac2;
+} */
 
 .project {
-  display: inline-block;
   font-family: 'Raleway', sans-serif;
-  gap: 1rem;
-  padding: 0 1rem;
+  /* background: rgb(0 0 0 / 0.1) !important; */
+  padding-top: 3rem;
 }
 
-.project-name {
-  width: fit-content;
-  display: inline-block;
-}
-
-.project-date {
-  padding-left: 10px;
-  color: #777;
-  font-style: italic;
-  width: fit-content;
-  display: inline-block;
+.project-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .project-title {
+  /* background: rgba(229, 126, 240, 0.1) !important; */
   display: inline-block;
+  width: 30%;
+}
+
+.project-title-contents {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.project-name {
+  margin: 0px;
+  display: inline-block;
+  color:rgb(231, 243, 139, 0.4);
+}
+
+.project-date {
+  margin: 0px;
+  display: inline-block;
+  color: #777;
+  font-style: italic;
+}
+
+.project-divider {
+  height: 0.1rem;
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  color: black; ;
+  background: black;
+}
+
+.project-body {
+  /* background: rgba(159, 240, 150, 0.4) !important;  */
+  display: inline-block;
+  width: 30%;
+}
+
+.project-body-contents {
+  
 }
 
 .project-description {
-  display: inline-block;
-  width: fit-content;
-}
-
-.project {
+  margin: 0px;
   /* background: rgb(0 0 0 / 0.1) !important; */
 }
 
-
-
 .project-specs {
+  margin: 0px;
   font-style: italic;
-  padding: 5px;
-  margin: 0;
+  /* background: rgb(0 0 0 / 0.1) !important; */
 }
 
 .education-title {
   font-family: 'Raleway', sans-serif;
+}
+
+.footer-parent-parent {
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer-parent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f69e81;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  color: #fef9f8;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-text {
+  color: #fef9f8;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+}
+
+#footer-text-top {
+  font-size: 13px;
+  font-weight: lighter;
+  margin-top: .3rem;
+  margin-bottom: .1rem;
+}
+
+#footer-text-bottom {
+  margin-bottom: .3rem;
 }

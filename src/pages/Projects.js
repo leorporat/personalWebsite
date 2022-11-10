@@ -1,4 +1,4 @@
-// import Project from "../components/Project";
+import Project from "../components/Project";
 import Title from "../components/Title";
 import tools from '../pictures/tool_png.png';
 
@@ -10,12 +10,12 @@ function Projects() {
                 title='Projects'
                 image={tools}
             />
-            {/* <Project 
+            { <Project 
                 title='This website' 
-                date='(July 2022)'
-                description='Website about myself, a short summer project'
+                date='July 2022'
+                description='Website about myself, personal project'
                 specs='HTML, CSS, React.js'
-            /> */}
+            /> }
         </body>
     );
 }
