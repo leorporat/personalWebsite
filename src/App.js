@@ -16,10 +16,10 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/personalWebsite" element={<About />} />
-          <Route path="/" element={<About />} />
-          <Route path="/education" element={<Education />} />
+          <Route path="/" element={<Personal />} />
+          {/* <Route path="/education" element={<Education />} /> */}
           <Route path="/projects" element={<Projects />} />
-          <Route path="/personal" element={<Personal />} />
+          {/* <Route path="/personal" element={<Personal />} /> */}
         </Routes>
       <Footer />
       </div>

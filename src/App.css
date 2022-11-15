@@ -1,7 +1,23 @@
 * {
   box-sizing: border-box;
-  color: #0d0d0d;
   font-family: 'Raleway', sans-serif;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  color: #f58863;
+}
+
+.link-png {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  color: #4b4b4b;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .page {
@@ -52,11 +68,20 @@ nav ul {
 
 }
 
-.nav-tab {
+nav li {
   position: relative;
+  color: #4b4b4b;
 }
 
-.nav-tab::after {
+nav li:hover {
+  text-decoration: underline;
+}
+
+/* nav li.active {
+  color: #f69e81;
+} */
+
+/* .nav-tab::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -70,25 +95,46 @@ nav ul {
 
 .nav-tab:hover::after {
   transform: scale(1, 1)
-}
+} */
 
 .site-title {
-  font-size: 200px;
+  font-size: 2.25rem;
+  color:#4b4b4b;
+}
+
+.site-title:hover {
+  text-decoration: underline;
+
 }
 
 .about {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-align: center;
+  display: flex;
+  width: 75%;
 }
 
 .about-body {
   flex-direction: column;
   display: flex;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
+  color: #4b4b4b;
+}
+
+#umn-link {
+
+}
+
+.about-text {
+
+}
+
+.about-title {
+  color: #4b4b4b;
 }
 
 .about p {
+  color: #4b4b4b;
   font-size: 20px;
 }
 
@@ -100,18 +146,10 @@ nav ul {
 
 #about-connect {
   padding-bottom: 25px;
-}
-
-.site-title {
-  font-size: 2.25rem;
-}
-
-nav li.active {
-  color: #777;
+  color: #4b4b4b;
 }
 
 .section-title {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,8 +158,11 @@ nav li.active {
 }
 
 #title-name {
+  margin-bottom: 20px;
   padding-left: 15px;
+
   font-size: 2.5rem;
+  color: #4b4b4b;
 }
 
 #title-image {
@@ -174,11 +215,10 @@ nav li.active {
     transform: scale(0,1);
     transition: transform 0.3s ease;
   }
-  
+
   .navline-text:hover::after {
     transform: scale(1, 1)
-  }
-
+  } 
 
 .navline-parent {
   margin: 15px auto;
@@ -188,6 +228,13 @@ nav li.active {
   background: #f69e81;
   /* background: rgba(231, 243, 139, 0.4) !important;  */
   max-width: 200px;
+  transform: scale(1, 1);
+  transition: transform 0.3s ease;
+}
+
+.navline-parent:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 0.3s ease;
 }
 
 /* .navline-parent:hover {
@@ -247,10 +294,6 @@ nav li.active {
   width: 30%;
 }
 
-.project-body-contents {
-  
-}
-
 .project-description {
   margin: 0px;
   /* background: rgb(0 0 0 / 0.1) !important; */
@@ -308,4 +351,107 @@ nav li.active {
 
 #footer-text-bottom {
   margin-bottom: .3rem;
+}
+
+.project2 {
+  display: flex;
+  justify-content: center;
+}
+
+.project2-container {
+  background-color: white;
+  width: 80%;
+  height: 30%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.project2-contents {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.project2-body {
+  display: inline-block;
+  margin-left: 15px;
+  width: 60%;
+}
+
+.project2-image {
+  display: inline-block;
+  padding: 0px;
+  height: 30%;
+  width: 30%;
+  border-radius: 10px;
+}
+
+.project2-text {
+  display: inline-block;
+  color: #4b4b4b;
+
+}
+
+.project2-title {
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.project2-description {
+  margin-top: 50px;
+}
+
+.project2-specs {
+  color: #f69e81;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project2-technologies {
+  display: inline-block;
+  color: #f69e81;
+  font-size: 20px;
+}
+
+.project2-link {
+  display: inline-block;
+  color: #fef9f8;
+  padding: 10px;
+  background-color: #f69e81;
+  text-decoration: none;
+  border-radius: 15px;
+  outline-style: solid;
+  transform: scale(1, 1);
+  transition: transform 0.3s ease;
+}
+
+.project2-link:hover {
+  /* background-color: white;
+  color: #f69e81;
+  outline:  #f69e81; */
+  transform: scale(1.05, 1.05);
+  transition: transform 0.3s ease;
+}
+
+.home {
+  margin-top: 75px;
+  display: flex;
+  color: #4b4b4b;
+  justify-content: center;
+}
+
+.home-container {
+  width: 72%;
+}
+
+
+.home-title {
+  color: #4b4b4b;
+}
+
+#home-description {
+  line-height: 1.6;
 }

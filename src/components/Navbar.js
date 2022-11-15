@@ -13,9 +13,9 @@ function Navbar() {
                     <Link to="/" className="site-title">Leor Porat</Link>
                 </div>
                 <ul>
-                    <SetActiveRoute to="/education" className='nav-tab'>Education</SetActiveRoute>
-                    <SetActiveRoute to="/projects" className='nav-tab'>Projects</SetActiveRoute>
-                    <SetActiveRoute to="/personal" className='nav-tab'>Personal</SetActiveRoute>
+                    {/* {<SetActiveRoute to="/education" className='nav-tab'>[education]</SetActiveRoute>} */}
+                    <SetActiveRoute to="/projects" className='nav-tab'>[projects]</SetActiveRoute>
+                    {/* <SetActiveRoute to="/personal" className='nav-tab'>[personal]</SetActiveRoute> */}
                 </ul>
             </nav>
         </div>
