@@ -346,7 +346,7 @@ nav li:hover {
   font-size: 13px;
   font-weight: lighter;
   margin-top: .3rem;
-  margin-bottom: .1rem;
+  margin-bottom: 0;
 }
 
 #footer-text-bottom {
@@ -379,6 +379,7 @@ nav li:hover {
   display: inline-block;
   margin-left: 15px;
   width: 60%;
+  vertical-align: top;
 }
 
 .project2-image {
@@ -386,54 +387,52 @@ nav li:hover {
   padding: 0px;
   height: 30%;
   width: 30%;
+  min-height: 125px;
+  min-width: 260px;
   border-radius: 10px;
 }
 
 .project2-text {
   display: inline-block;
   color: #4b4b4b;
-
 }
 
 .project2-title {
   padding: 0px;
-  margin-top: 10px;
 }
 
 .project2-description {
-  margin-top: 50px;
+  margin: 45px 0;
 }
 
 .project2-specs {
   color: #f69e81;
   display: flex;
   justify-content: space-between;
+  font-size: 1.1rem;
 }
 
 .project2-technologies {
   display: inline-block;
   color: #f69e81;
-  font-size: 20px;
+  margin: 0px;
 }
 
 .project2-link {
   display: inline-block;
-  color: #fef9f8;
-  padding: 10px;
-  background-color: #f69e81;
   text-decoration: none;
-  border-radius: 15px;
-  outline-style: solid;
-  transform: scale(1, 1);
-  transition: transform 0.3s ease;
+  color: inherit;
+  /* transform: scale(1, 1);
+  transition: transform 0.3s ease; */
 }
 
 .project2-link:hover {
   /* background-color: white;
   color: #f69e81;
   outline:  #f69e81; */
-  transform: scale(1.05, 1.05);
-  transition: transform 0.3s ease;
+  /* transform: scale(1.05, 1.05);
+  transition: transform 0.3s ease; */
+  text-decoration: underline;
 }
 
 .home {

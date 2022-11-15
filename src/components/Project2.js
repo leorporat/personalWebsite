@@ -10,7 +10,7 @@ function Project2({image, github_link, description, title, technologies}) {
                                 <p className='project2-description'>{description}</p>
                             </div>
                             <div className='project2-specs'>
-                                <a className='project2-link' target='_blank' rel='noreferrer' href={github_link}>GitHub Link</a>
+                                <a className='project2-link' target='_blank' rel='noreferrer' href={github_link}>[github link]</a>
                                 <p className='project2-technologies'>{technologies}</p>
                             </div>
                         </div>
